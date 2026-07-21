@@ -1,0 +1,13 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="fixedserverlist"
+version="1.0"
+displayName="Fixed Server List"
+authors="YourName"
+description="Keeps a custom server entry fixed in the multiplayer list with custom color."
+
+[[mixins]]
+config="fixedserverlist.mixins.json"
