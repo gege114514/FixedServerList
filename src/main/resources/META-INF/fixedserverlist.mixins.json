@@ -1,0 +1,18 @@
+{
+    "required": true,
+    "minVersion": "0.8",
+    "package": "com.example.fixedserverlist.mixin",
+    "compatibilityLevel": "JAVA_17",
+    "refmap": "fixedserverlist.refmap.json",
+    "mixins": [
+    ],
+    "client": [
+        "MultiplayerScreenMixin",
+        "ServerDataMixin",
+        "OnlineServerEntryMixin",
+        "EntryAccessorMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
