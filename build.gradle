@@ -5,7 +5,7 @@ buildscript {
         maven { url = 'https://libraries.minecraft.net/' }
     }
     dependencies {
-        classpath 'net.minecraftforge.gradle:ForgeGradle:6.0.+'
+        classpath 'net.minecraftforge.gradle:ForgeGradle:5.1.+'
         classpath 'org.spongepowered:mixingradle:0.7.+'
     }
 }
@@ -24,9 +24,8 @@ minecraft {
     runs {
         client {
             workingDirectory project.file('run')
-            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.markers', 'REGISTRIES'
             property 'forge.logging.console.level', 'debug'
-            arg '-mixin.config=fixedserverlist.mixins.json'
             mods {
                 fixedserverlist {
                     source sourceSets.main
