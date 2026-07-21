@@ -37,7 +37,6 @@ minecraft {
     }
 }
 
-// Mixin 配置
 mixin {
     add sourceSets.main, 'fixedserverlist.refmap.json'
     config 'fixedserverlist.mixins.json'
@@ -56,7 +55,11 @@ dependencies {
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
-// 确保资源目录被识别
+// 强制 compileJava 依赖于下载的 Minecraft 依赖
+compileJava {
+    dependsOn 'downloadMcpConfig', 'extractSrg', 'createMcpToSrg'
+}
+
 sourceSets.main.resources { srcDir 'src/main/resources' }
 
 jar {
