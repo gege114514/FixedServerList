@@ -3,7 +3,7 @@ package com.example.fixedserverlist;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.screens.multiplayer.MultiplayerScreen;
 import net.minecraft.client.gui.screens.Screen;
-import net.minecraft.client.server.ServerData;
+import net.minecraft.client.multiplayer.ServerData;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.ScreenEvent;
 import net.minecraftforge.common.MinecraftForge;
