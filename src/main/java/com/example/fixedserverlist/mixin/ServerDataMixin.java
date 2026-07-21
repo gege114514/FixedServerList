@@ -1,6 +1,6 @@
 package com.example.fixedserverlist.mixin;
 
-import net.minecraft.client.server.ServerData;
+import net.minecraft.client.multiplayer.ServerData;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 
